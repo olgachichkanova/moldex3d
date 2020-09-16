@@ -1,0 +1,279 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial,  sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-width: 960px;
+    height: 100vh;
+}
+.header-style {
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;  
+    margin: 0 auto;
+}
+.menu-container {
+    padding-top: 15px;
+}
+
+.header-img{
+    height: 50px;
+    padding-top: 5px;
+}
+
+.header-menu-list{
+   margin: 0;
+   padding: 0;
+}
+.header-menu-list-item {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 20px;
+    margin-left: 25px;
+}
+
+.menu-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#AC428E;
+    font-size: 12px;
+}
+
+.title-container{
+    margin-top: 200px;
+    
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 570px;
+}
+.header-title {
+    color:#AC428E;
+    font-size: 48px;
+    text-transform: capitalize;
+    order: 2;
+    margin: 0;
+    padding: 25px 0;
+    
+}
+.subtitle {
+    color:#AC428E;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    
+}
+
+.title-second{
+   align-self: flex-start;
+}
+
+.title-third {
+    order: 3;
+    
+}
+
+.button-container{
+    margin-top: 150px;
+}
+
+.button{
+    background-color: #EB4BB5;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.section-title{
+    color: #D21010;
+    font-size: 27px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.section{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.introduction-img{
+    width: 250px;
+    margin: 0 auto;
+}
+
+.users {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.introduction-text {
+    text-align: center;
+}
+
+.users-container {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    margin: 50px 0;
+}
+
+.section-subtitle {
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.mold {
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.users-text-container{
+    width: 400px;
+}
+
+.part-info {
+    padding-left: 70px;
+}
+
+.mold-info{
+    padding-right: 70px;
+}
+.users-title{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.users-img{
+    height: 250px;
+    width: 250px;
+}
+
+.advantages-items{
+    display: flex;
+    justify-content: center;
+}
+
+.advantage {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.advantage:nth-child(n+2) {
+    margin-left: 15px;
+}
+
+.package{
+    box-sizing: border-box;
+    width: 930px;
+    padding: 50px 25px;
+    text-align: center;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+.package:nth-child(n+2){
+    margin-top: 90px;
+}
+
+.package-img {
+    width: 400px;
+}
+.package-link {
+    color: #EB4BB5;
+    text-decoration: none;
+}
+
+.package-link:hover{
+    border-bottom: 1px solid #EB4BB5;
+}
+
+.footer {
+    background-color: #E225A2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 25px;
+}
+
+.contact{
+   color:rgba(250, 250, 250, 0.75);
+   text-align: center;
+}
+
+.list-properties{
+    list-style: none;
+    padding: 0;
+}
+
+.link-properties {
+    text-decoration: none;
+    color: rgba(250, 250, 250, 0.75);
+}
+
+.adress li{
+    padding: 10px 200px;
+}
+
+.social-media{
+    width: 32px;
+	height: 32px;
+	padding: 30px;
+	background-position: center;  
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.social-media-facebook{
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+}
+
+.social-media-twitter{
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+}
+
+.social-media-linkedin{
+    background-image: url(../img/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+}
+
+.social-media-text{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
