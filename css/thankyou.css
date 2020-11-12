@@ -10,11 +10,7 @@
     .img-container {
         justify-content: flex-start;
     }
-    
-    .title, .subtitle {
-        width: 60%;
-        max-width: 600px;
-    }
+ 
 }
 
 @media (min-width: 361px) and (max-width: 959px) {
@@ -29,16 +25,11 @@
     .img-container {
         justify-content: center;
     }
-
-    .title, .subtitle {
-        width: 70%;
-        min-width: 350px;
-    }
 }
 
 @media (max-width: 360px) {
     html {
-        font-size: 14px;
+        font-size: 12px;
      }
 
      .container {
@@ -47,14 +38,6 @@
 
     .img-container {
         justify-content: center;
-    }
-
-    .title, .subtitle {
-        width: 90%;
-    }
-
-    .advantages-list {
-        flex-direction: column;
     }
 }
 
@@ -110,79 +93,37 @@ body{
     border-bottom: 1px solid #f06501;
 }
 
-.header-container {
-    background-image: url("../img/freetrial.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 50px 0;
-    position: relative;
-}
-/*
-.title-container::after{
-    content:"";
-    background-color: #000000;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-*/
-
-.title-container {
-padding: 0 5%;
-}
-
 .title {
-    font-size: 2.5rem;
+    color: #000;
+    font-size: 3rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-align: center;
     position: relative;
     z-index: 1;
 }
 
 .subtitle {
-    font-size: 2rem;
-    text-transform: capitalize;
+    font-size: 1.5rem;
     font-weight: normal;
-}
-
-.button{
-    background-color: #D21010;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 1em;
-    text-decoration: none;
-    padding: 10px;
-
-    border: none;
-    padding: 10px 30px;
-    margin: 0 auto;
-}
-
-.button:hover {
-    background-color: #ad0e0e;
+    text-align: center;
 }
 
 .section {
     width: 80%;
     max-width: 960px;
     margin: 0 auto;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.section-title{
-    color: #D21010;
-    font-size: 1.6em;
-    font-weight: normal;
+.section-img {
+    display: flex;
+    justify-content: center;
 }
 
-.section-subtitle{
-    color: #000;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 700;
+.img {
+    max-width: 150px;
 }
 
 .home-page-link {
@@ -196,56 +137,9 @@ padding: 0 5%;
     border-bottom: 1px solid #f06501;
 }
 
-.advantages {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.04);
+.promotion-img {
+    width: 50%;
 }
-
-.advantages-list {
-    display: flex;
-    padding: 0;
-    padding-top: 20px;
-    list-style-type: none;
-}
-
-.advantage-img {
-    width: 100%;
-}
-
-.advantage-text {
-    text-align: center;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  
- .field-group{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group{
-    width: 100%;
-    margin-bottom: 25px;
-  }  
-  
-  .form-actions{
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .field{
-    box-sizing: border-box;
-    height: 35px;
-    width: 100%;
-    padding: 0 15px;
-    outline-color: #f08501;
-  }
-
-
 
 
 .figcaption {

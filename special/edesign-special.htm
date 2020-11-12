@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Тест Moldex3D eDesign Бесплатно</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/edesign-special.css">
-    <script src=""></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/edesign-special.css">
+    <script src="/script.js"></script>
 </head>
 <body>
 <header class="header">
         <div class="menu-container">
-            <img src="img/Moldex3D Logo.png" alt="Moldex3D" class="header-img">
+            <img src="../img/Moldex3D Logo.png" alt="Moldex3D" class="header-img">
             <nav class="header-menu">
                 <ul class="header-menu-list list-decoration">
                     <li class="header-menu-list-item">
-                        <a href="blog.html" class="menu-link link-decoration">Промо</a>
+                        <a href="../promo/blog.html" class="menu-link link-decoration">Промо</a>
                     </li>
                 </ul>
             </nav>
@@ -30,7 +30,7 @@
 </header>
 
 <main class="section">
-    <a href="index.html" class="home-page-link">На главную</a>
+    <a href="../index.html" class="home-page-link">На главную</a>
 
     <h3 class="section-title">
         Возможности eDesign
@@ -47,48 +47,53 @@
     <div class="section">
         <h3 class="section-title section-subtitle">Все еще сомневаетесь? Получите бесплатную тестовую лицензию, чтобы самостоятельно оценить все преимущества Moldex3D eDesign! </h3>
         <ul class="advantages-list">
-            <li class="advantage-item"><img src="img/Free tutorial videos-06.png" alt="free tutorial video infographics" class="advantage-img">
+            <li class="advantage-item"><img src="../img/Free tutorial videos-06.png" alt="free tutorial video infographics" class="advantage-img">
             <p class="advantage-text">Бесплатные обучающие видео</p></li>
-            <li class="advantage-item"><img src="img/30min technical talk-04.png" alt="technical talk infographics" class="advantage-img">
+            <li class="advantage-item"><img src="../img/30min technical talk-04.png" alt="technical talk infographics" class="advantage-img">
             <p class="advantage-text">30 минут консультации с нашим специалистом</p></li>
-            <li class="advantage-item"><img src="img/Online Support available for you-03.png" alt="online support infographics" class="advantage-img">
+            <li class="advantage-item"><img src="../img/Online Support available for you-03.png" alt="online support infographics" class="advantage-img">
             <p class="advantage-text">Онлайн Поддержка</p></li>
         </ul>
     </div>
 </section>
 <section class="section" id="action">
         <h3 class="section-title">Получите бесплатную тестовую лицензию!</h3>
-        <form class="form">
-              <div class="form-group">
-                <label class="field-group">
-                  <span class="field-label">Ваше имя:</span>
-                  <input class="field" placeholder="Например: Иван Петров" required>
-                </label>
-              </div>
-              <div class="form-group">
-                <label class="field-group">
-                  <span class="field-label">Ваша компания:</span>
-                  <input class="field" placeholder="Например: ООО Пластик" required>
-                </label>
-              </div>
-              <div class="form-group">
-                <label class="field-group">
-                  <span class="field-label">Ваша должность:</span>
-                  <input class="field" placeholder="Например: инженер" required>
-                </label>
-              </div>
-              <div class="form-group">
-                <label class="field-group">
-                  <span class="field-label">E-mail, на который мы отправим лицензию:</span>
-                  <input type="email" class="field" placeholder="Например: ivan@plastic.com" required>
-                </label>
-              </div>
-              <div class="form-group form-actions">
-                <button class="button button-submit" type="submit">Отправить</button>
-              </div>
-        </form>
+        <form action="/mail.php" method="POST" class="form">
+            <div class="form-group">
+              <label class="field-group">
+                <span class="field-label">Ваше имя:</span>
+                <input name="user_name" class="field" placeholder="Например: Иван Петров" required>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="field-group">
+                <span class="field-label">Ваша компания:</span>
+                <input name="user_company" class="field" placeholder="Например: ООО Пластик" required>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="field-group">
+                <span class="field-label">Ваша должность:</span>
+                <input name="user_title" class="field" placeholder="Например: инженер" required>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="field-group">
+                <span class="field-label">E-mail, на который мы отправим лицензию:</span>
+                <input name="user_email" type="email" class="field" placeholder="Например: ivan@plastic.com" required>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="field">
+                  <input name="user_data"  type="checkbox" id="data" required>
+                  <label for="data"> Даю согласие на обработку персональных данных</label>
+              </label>
+            </div>
+            <div class="form-group form-actions">
+              <button class="button button-submit" type="submit">Отправить</button>
+            </div>
+      </form>
 </section>
-
 
 <footer class="footer">
         <adress class="contact container">

@@ -8,7 +8,7 @@
     <meta name="viewport"
  content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main3.css" />
-    <script src=""></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -18,7 +18,7 @@
                 <nav class="header-menu">
                     <ul class="header-menu-list">
                         <li class="header-menu-list-item">
-                            <a href="blog.html" class="menu-link">Промо</a>
+                            <a href="promo/blog.html" class="menu-link">Промо</a>
                         </li>
                     </ul>
                 </nav>
@@ -94,20 +94,20 @@
                 <img src="img/eDesign.jpg" alt="Moldex3D eDesign" class="package-img">
                 <h4 class="section-subtitle">Moldex3D eDesign</h4>
                 <p>Основной пакет Moldex3D включает в себя расчет заполнения формы, выдержки под давлением, охлаждения и коробления, а так же моделирование процесса многокомпонентного литья. Moldex3D eDesign идеален для расчетов проливаемости формы, прогнозирования таких дефектов как линии спая и воздушные ловушки, понимания тенденций усадки изделия и его деформации.</p>
-                <a href="edesign.html" class="package-link">Подробнее</a>
+                <a href="edesign/edesign.html" class="package-link">Подробнее</a>
             </div>
             <div class="package professional">
                 <img src="img/Professional.jpg" alt="Moldex3D Professional" class="package-img">
                 <h4 class="section-subtitle">Moldex3D Professional</h4>
                 <p>Этот пакет отличается продвинутой технологией построения сетки, что позволяет получать более точные результаты даже для деталей с очень сложной геометрией. Помимо возможностей пакета eDesign, Moldex3D Professioanl предлагает моделирование литья с газом или водой, двухцветного и двухкомпонентного литья, литья на пленку, литья с физическим и химическим вспениванием и многое другое.</p>
-                <a href="professional.html" class="package-link">Подробнее</a>
+                <a href="professional/professional.html" class="package-link">Подробнее</a>
             </div>
             <div class="package advanced">
                 <img src="img/Advanced.jpg" alt="Moldex3D Advanced" class="package-img">
                 <h4 class="section-subtitle">Moldex3D Advanced</h4>
                 <p>Что если ваше изделие отличается не только сложной геометрией, но так же требует моделирования специальных технологий литья?
                 Moldex3D Advanced позволяет моделировать оптические характеристики изделий из полимеров, процессы инжекционно-компрессионного формования, процессы прессования термопластов, реактопластов и резин и т.д.</p>
-                <a href="advanced.html" class="package-link">Подробнее</a>
+                <a href="advanced/advanced.html" class="package-link">Подробнее</a>
             </div>
         </div>
     </section>
@@ -115,29 +115,35 @@
     <section class="action" id="action">
         <div class="section">
             <h3 class="section-title">Получите бесплатную пробную лицензию!</h3>
-            <form class="form">
+            <form action="mail.php" method="POST" class="form">
                   <div class="form-group">
                     <label class="field-group">
                       <span class="field-label">Ваше имя:</span>
-                      <input class="field" placeholder="Например: Иван Петров" required>
+                      <input name="user_name" class="field" placeholder="Например: Иван Петров" required>
                     </label>
                   </div>
                   <div class="form-group">
                     <label class="field-group">
                       <span class="field-label">Ваша компания:</span>
-                      <input class="field" placeholder="Например: ООО Пластик" required>
+                      <input name="user_company" class="field" placeholder="Например: ООО Пластик" required>
                     </label>
                   </div>
                   <div class="form-group">
                     <label class="field-group">
                       <span class="field-label">Ваша должность:</span>
-                      <input class="field" placeholder="Например: инженер" required>
+                      <input name="user_title" class="field" placeholder="Например: инженер" required>
                     </label>
                   </div>
                   <div class="form-group">
                     <label class="field-group">
                       <span class="field-label">E-mail, на который мы отправим лицензию:</span>
-                      <input type="email" class="field" placeholder="Например: ivan@plastic.com" required>
+                      <input name="user_email" type="email" class="field" placeholder="Например: ivan@plastic.com" required>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="field">
+                        <input name="user_data"  type="checkbox" id="data" required>
+                        <label for="data"> Даю согласие на обработку персональных данных</label>
                     </label>
                   </div>
                   <div class="form-group form-actions">
@@ -152,7 +158,7 @@
                 <ul class="adress list-properties">
                     <li>support.eu@moldex3d.com</li>
                     <li> +886-3-560-0199</li>
-                    <li>Tai Yuen Hi-Tech Industrial Park, 8F-2, No.32, Taiyuan St. Chupei City, Hsinchu County 302, Taiwan</li>
+                    <li>CoreTech System Co. Ltd., 8F-2, No.32, Taiyuan St. Zhubei City, Hsinchu County 302, Taiwan</li>
                 </ul>
         </adress>
         <adress class="contact container">
